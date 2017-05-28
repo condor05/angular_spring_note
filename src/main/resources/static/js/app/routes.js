@@ -3,11 +3,6 @@ angular.module('NoteWrangler').config(function($routeProvider){
     .when('/', {
       redirectTo: '/notes'
     })
-    //   .when('/', {
-    //       templateUrl: "ng_templates/notes/index.html",
-    //       controller: "NotesIndexController"
-    //   })
-
     .when('/notes', {
       templateUrl: "ng_templates/notes/index.html",
       controller: "NotesIndexController"
@@ -37,5 +32,10 @@ angular.module('NoteWrangler').config(function($routeProvider){
       templateUrl: "ng_templates/users/show.html",
       controller: "UsersShowController"
     });
+  //     .when('/login', {
+  //     templateUrl: 'ng_templates/login.html',
+  //     controller: 'navigation',
+  //     controllerAs: 'controller'
+  // });
 
 });

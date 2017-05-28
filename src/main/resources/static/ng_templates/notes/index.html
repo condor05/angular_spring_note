@@ -1,3 +1,8 @@
+<div ng-show="authenticated">
+  <p>The ID is {{controller.greeting.id}}</p>
+  <p>The content is {{controller.greeting.content}}</p>
+</div>
+
 <h1>Notes <a class="btn btn-default" href="#/notes/new">New Note</a></h1>
 <div class="form-group">
   Search: <input type='text' ng-model="search.input.$">

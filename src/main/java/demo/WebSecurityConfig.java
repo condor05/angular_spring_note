@@ -16,14 +16,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
          //@formatter:off
-        http
-                .httpBasic().and()
-                .authorizeRequests()
-                .antMatchers("/index_old.html", "/home_old.html","login_old.html","/index.html*", "/home.html", "/login.html", "/test.html", "/", "/ng-templates/**").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .csrf()
-                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+//        http
+//                .httpBasic().and()
+//                .authorizeRequests()
+//                .antMatchers("/index_old.html", "/home_old.html","login_old.html","/index.html**", "/home.html", "/login.html", "/test.html", "/", "/ng-templates/**", "/#/login").permitAll()
+//                .anyRequest().authenticated()
+//                .and()
+//                .csrf()
+//                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
          //@formatter:on
     }
 
